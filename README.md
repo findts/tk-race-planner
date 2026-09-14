@@ -56,6 +56,6 @@ The two version strings must match. The planner fetches `version.json` with `cac
 ## Timing notes
 
 - The individual Ottawa run splits total 38:39; the official running aggregate was 38:35.
-- The Toronto targets total 1:07:35. They are built from what is available rather than spread evenly: process error (sled pull lap penalty, rope slack, transitions), the two stations already in training, and holding the late runs.
+- The Toronto targets total 1:07:35. They are built from what is available rather than spread evenly: process error (the aborted sled pull exit, rope slack, transitions), the two stations already in training, and holding the late runs.
 - Overall improvement uses the official Ottawa finish of 1:11:30. Roxzone carries HYRESULT's 4:42, so the baseline rows sum to 1:11:34; the 4 seconds is the run-split discrepancy.
 - Roxzone is an aggregate added last; earlier projected clocks exclude transitions.
