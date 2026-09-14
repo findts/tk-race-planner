@@ -56,6 +56,6 @@ The two version strings must match. The planner fetches `version.json` with `cac
 ## Timing notes
 
 - The individual Ottawa run splits total 38:39; the official running aggregate was 38:35.
-- The Toronto targets total 1:07:41, 19 seconds inside 1:08:00. They are weighted to the five stations ranked outside the top 100 at Ottawa rather than spread evenly.
-- Overall improvement uses the official Ottawa finish of 1:11:30.
+- The Toronto targets total 1:07:38, 22 seconds inside 1:08:00 and 54 clear of the 1:08:32 that took second in 45-49 at Ottawa. They are weighted by the age-group field rather than the global one.
+- Overall improvement uses the official Ottawa finish of 1:11:30. Roxzone carries HYRESULT's 4:42, so the baseline rows sum to 1:11:34; the 4 seconds is the run-split discrepancy.
 - Roxzone is an aggregate added last; earlier projected clocks exclude transitions.
