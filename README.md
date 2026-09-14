@@ -47,6 +47,8 @@ In the repository's Settings → Pages, select **Deploy from a branch**, then **
 
 Edit `tk-hyrox-race-planner.html`, bump the version in **both** `version.json` and the `APP_VERSION` constant in the planner's last script block, then commit and push to `main`. When Pages is configured, GitHub publishes the changes at the same address. Preserve the localStorage key and compatibility with saved plans to retain existing browser edits.
 
+Correcting a team's recorded race times is safe: saved targets, notes and handoffs are kept, the new times replace the old ones, and the viewer is told their plan was carried across. Exports carry the team key, so one team's plan cannot be imported into another team's page; an export made before a times correction still imports, using the current times.
+
 The two version strings must match. The planner fetches `version.json` with `cache: 'no-store'` on load and whenever the page regains focus; when the fetched version differs from `APP_VERSION`, it reloads itself with a fresh `?v=` query string so a phone cannot serve the stale copy. This matters most for a Home Screen icon, which caches aggressively. If the versions are left unbumped, the page simply never reloads; if only `version.json` is bumped, every visit reloads once and then settles. Local file and attachment previews have no `version.json` to fetch, so the check fails silently and the page works as before.
 
 ## Timing notes
