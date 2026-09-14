@@ -56,6 +56,6 @@ The two version strings must match. The planner fetches `version.json` with `cac
 ## Timing notes
 
 - The individual Ottawa run splits total 38:39; the official running aggregate was 38:35.
-- The Toronto targets total 1:07:38, 22 seconds inside 1:08:00 and 54 clear of the 1:08:32 that took second in 45-49 at Ottawa. They are weighted by the age-group field rather than the global one.
+- The Toronto targets total 1:07:33, 27 seconds inside 1:08:00. They are set against ten Pro Doubles Men 45-49 teams from Ottawa and New York: the six inside 1:08:32 ran a median 25:23 on stations and 4:03 in the roxzone, with running anywhere from 31:21 to 39:28. The plan takes 3:09 from stations, 37 seconds from the roxzone, and leaves running alone.
 - Overall improvement uses the official Ottawa finish of 1:11:30. Roxzone carries HYRESULT's 4:42, so the baseline rows sum to 1:11:34; the 4 seconds is the run-split discrepancy.
 - Roxzone is an aggregate added last; earlier projected clocks exclude transitions.
