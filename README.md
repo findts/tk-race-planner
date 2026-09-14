@@ -10,6 +10,33 @@ The planner is one standalone HTML file with embedded CSS and JavaScript. No ins
 
 Edits and scenarios save in the current browser's localStorage. They do not sync between athletes or devices. Use Export Plan and Import to exchange plans or keep a backup.
 
+## Add a team
+
+One file serves every team. Each team is an entry in the `TEAMS` block at the top of the planner's script, and a team's page is the same URL with `?team=<key>`:
+
+```
+https://findts.github.io/tk-race-planner/tk-hyrox-race-planner.html?team=tk
+```
+
+No `?team=` gives `DEFAULT_TEAM`, and an unrecognised key falls back to it rather than showing an empty page.
+
+To add a team, copy an existing block, give it a new key, and set:
+
+| Field | What it is |
+| --- | --- |
+| `brand` | Page title and masthead |
+| `badge` | Division label beside the masthead |
+| `prevRace` / `nextRace` | Race names; these fill the hero, column headers and mobile labels |
+| `officialPrev` | Official finish at the first race, `h:mm:ss` or `mm:ss` |
+| `planName` | Name of the starting scenario |
+| `storageKey` | **Must be unique** |
+| `footnote` | Optional timing caveats; a generic note is used if omitted |
+| `rows` | The 17 segments: `[type, name, first-race time, target, reason]` where type is `run`, `station` or `roxzone` |
+
+`storageKey` matters more than it looks: every team on `findts.github.io` shares one localStorage, so two teams with the same key overwrite each other's saved plans. Keep `tk` on `hyrox-doubles-planner-v1` or existing saved plans are orphaned.
+
+Because the teams share one file, a fix or design change reaches every team on the next push. The read-only attachment preview is the one exception — it shows the default team's numbers, since it renders without JavaScript.
+
 ## Publish with GitHub Pages
 
 In the repository's Settings → Pages, select **Deploy from a branch**, then **main** and **/ (root)**. GitHub provides a website link when deployment completes. GitHub Pages availability depends on the repository visibility and account plan.
