@@ -33,6 +33,8 @@ To add a team, copy an existing block, give it a new key, and set:
 | `footnote` | Optional timing caveats; a generic note is used if omitted |
 | `rows` | The 17 segments: `[type, name, first-race time, target, reason]` where type is `run`, `station` or `roxzone` |
 
+Team keys are deliberately not guessable (`ce-4hq7`, not `ce`), so nobody wanders into another team's page by editing the URL. This is obscurity, not privacy: the repository is public, so anyone who opens the source can read every team's data. Optional `prevShort` / `nextShort` give the mobile column labels a shorter name when the race name is long.
+
 `storageKey` matters more than it looks: every team on `findts.github.io` shares one localStorage, so two teams with the same key overwrite each other's saved plans. Keep `tk` on `hyrox-doubles-planner-v1` or existing saved plans are orphaned.
 
 Because the teams share one file, a fix or design change reaches every team on the next push. The read-only attachment preview is the one exception — it shows the default team's numbers, since it renders without JavaScript.
