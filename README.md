@@ -31,7 +31,7 @@ To add a team, copy an existing block, give it a new key, and set:
 | `planName` | Name of the starting scenario |
 | `storageKey` | **Must be unique** |
 | `footnote` | Optional timing caveats; a generic note is used if omitted |
-| `rows` | The 17 segments: `[type, name, first-race time, target, reason]` where type is `run`, `station` or `roxzone` |
+| `rows` | The 17 segments: `[type, name, first-race time, target, reason, handoff]` where type is `run`, `station` or `roxzone`. The sixth field is optional and seeds the handoff / split strategy column |
 
 Each team also gets a small entry page named after its key (`ce-4hq7.html`). Share that, not the `?team=` URL: link previews in Messages, Slack and the like are built by crawlers that do not run JavaScript, so they never see the team chosen at runtime and would show the default team's name. The entry page carries its own `<title>` and Open Graph tags and redirects with a script — a meta refresh would be followed by the crawler, which defeats the point.
 
