@@ -104,11 +104,11 @@ tk:{
  prevRace:'Ottawa',
  prevShort:'Ottawa',
  nextRace:'Toronto',
- officialPrev:'1:11:32',
+ officialPrev:'1:11:30',
  planName:'1:07 Goal',
  storageKey:'hyrox-doubles-planner-v1',
- footnote:'Ottawa timing note: the displayed run splits total 38:39; the official running aggregate was 38:32 (a 7-second discrepancy). Improvement uses the official Ottawa finish of 1:11:32. The supplied targets sum to 1:07:27, four seconds below the stated 1:07:31 plan total. Roxzone is shown last as an aggregate; race clocks before it exclude transitions.',
- rows:[['run','Run 1','4:38','4:32',''],['station','Ski Erg','3:43','3:35','100 m each rather than 125 m'],['run','Run 2','4:37','4:32',''],['station','Sled Push','2:23','2:18','Third-length turns rather than forcing half lengths'],['run','Run 3','4:51','4:40',''],['station','Sled Pull','4:11','3:50','No early exit + better rope management'],['run','Run 4','4:50','4:40',''],['station','Burpee Broad Jumps','3:10','2:55','Technique/rhythm work'],['run','Run 5','4:59','4:45',''],['station','Row','3:58','3:50',''],['run','Run 6','4:53','4:45',''],['station','Farmers Carry','1:56','1:50',''],['run','Run 7','4:45','4:40',''],['station','Sandbag Lunges','4:00','3:25','Specific training'],['run','Run 8','5:06','4:50',''],['station','Wall Balls','4:52','3:45','Specific training'],['roxzone','Roxzone','4:47','4:35','']]
+ footnote:'Ottawa timing note: the eight run splits sum to 38:39 against an official running aggregate of 38:35, a 4-second discrepancy. Roxzone is not a measured split \u2014 it is derived from the official finish of 1:11:30, so the rows sum to that exactly. The targets sum to 1:07:27, four seconds below the stated 1:07:31 plan total. Roxzone is shown last as an aggregate; race clocks before it exclude transitions.',
+ rows:[['run','Run 1','4:38','4:32',''],['station','Ski Erg','3:43','3:35','100 m each rather than 125 m'],['run','Run 2','4:37','4:32',''],['station','Sled Push','2:23','2:18','Third-length turns rather than forcing half lengths'],['run','Run 3','4:51','4:40',''],['station','Sled Pull','4:11','3:50','No early exit + better rope management'],['run','Run 4','4:50','4:40',''],['station','Burpee Broad Jumps','3:10','2:55','Technique/rhythm work'],['run','Run 5','4:59','4:45',''],['station','Row','3:58','3:50',''],['run','Run 6','4:53','4:45',''],['station','Farmers Carry','1:56','1:50',''],['run','Run 7','4:45','4:40',''],['station','Sandbag Lunges','4:00','3:25','Specific training'],['run','Run 8','5:06','4:50',''],['station','Wall Balls','4:52','3:45','Specific training'],['roxzone','Roxzone','4:38','4:35','Already close to the 4:33 typical of teams finishing 1:10\u20131:20 \u2014 there is little left here, so the gains have to come from the stations.']]
 }
 };
 const DEFAULT_TEAM='tk';
@@ -178,7 +178,7 @@ scheduleTextFit();
    version.json is fetched with no-store; a newer version reloads with a fresh
    query string so the browser cannot serve the stale copy. */
 (function(){
-var APP_VERSION='2026-09-14.6';
+var APP_VERSION='2026-09-14.7';
 var checking=false;
 function check(){
   if(checking)return;checking=true;
