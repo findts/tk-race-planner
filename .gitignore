@@ -1,0 +1,4 @@
+.DS_Store
+# Keep personal source photos out of the repository.
+*.heic
+*.HEIC
